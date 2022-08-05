@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  color: #000;
+  background: #fff;
+  font-size: 16px;
+  min-width: 320px;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 38px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* google map fix */
+.gm-style img {
+  max-width: none;
+}

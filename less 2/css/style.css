@@ -1,0 +1,23 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul.inherit {
+  font-size: 25px;
+}
+
+.big-text {
+  background: rgb(124, 124, 24);
+  font-size: 30px;
+  display: inline-block;
+  padding: 10px 35px 50px 0;
+  border: solid #000;
+  border-width: 20px 10px 5px 0;
+}
+
+div {
+  background: #eee;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
