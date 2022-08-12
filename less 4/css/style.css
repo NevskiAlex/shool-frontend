@@ -1,0 +1,473 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?9ofqm2");
+  src: url("../fonts/icomoon.eot?9ofqm2#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?9ofqm2") format("truetype"),
+    url("../fonts/icomoon.woff?9ofqm2") format("woff"),
+    url("../fonts/icomoon.svg?9ofqm2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+  content: "\e906";
+}
+.icon-star-gold:before {
+  content: "\e907";
+}
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-link:before {
+  content: "\e902";
+}
+.icon-heart:before {
+  content: "\e903";
+}
+.icon-Group-33:before {
+  content: "\e908";
+}
+.icon-Group-32:before {
+  content: "\e909";
+}
+.icon-restaurant:before {
+  content: "\e90a";
+}
+.icon-workplace:before {
+  content: "\e90b";
+}
+.icon-kitchen:before {
+  content: "\e90c";
+}
+.icon-furniture:before {
+  content: "\e90d";
+}
+.icon-search:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\e905";
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.23;
+}
+
+h2 {
+  color: #242424;
+  font-size: 32px;
+  line-height: 1.62;
+}
+
+#header {
+  padding: 26px 0;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .logo {
+  color: #244d4d;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#header .menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+#header .menu a {
+  font-family: "DM Sans";
+  font-size: 16px;
+  color: #161616;
+  text-transform: capitalize;
+}
+
+#header .menu a:hover {
+  color: blue;
+}
+
+#header .menu li {
+  margin: 0 25px;
+}
+
+#header .left-holder {
+  display: flex;
+}
+
+#header .left-holder i {
+  font-size: 21px;
+  color: #244d4d;
+  margin-left: 30px;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.top-section {
+  margin-bottom: 70px;
+}
+
+.top-section .container {
+  display: flex;
+}
+
+.top-section .img-box {
+  width: 34.3%;
+  flex-shrink: 0;
+}
+
+.top-section .text-box {
+  padding: 80px 18px 18px 100px;
+  background: #154444;
+  color: #fff;
+}
+
+.btn-default {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  min-width: 172px;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #154444;
+  background: #fff;
+  padding: 15px 25px;
+}
+
+.btn-green {
+  font-size: 12px;
+  background: #244d4d;
+  color: #fff;
+  min-width: 78px;
+  padding: 9px 15px;
+  line-height: 1.17;
+}
+
+.furniture-section {
+  padding: 70px 0 55px;
+}
+
+.top-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 0 80px;
+}
+
+.top-wrapper p {
+  margin: 0;
+}
+
+.top-wrapper .btn-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+
+.top-wrapper .btn-list li {
+  margin-left: 15px;
+}
+
+.top-wrapper .btn-list i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f6;
+  color: #d1cece;
+}
+
+.top-wrapper .btn-list i.icon-arrow-right {
+  color: #666;
+}
+
+.three-columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.three-columns .columns {
+  padding: 15px;
+  width: 33.33%;
+  display: flex;
+}
+
+.three-columns .columns .shadow-holder {
+  box-shadow: 0px 13px 26px rgba(0, 0, 0, 0.07);
+}
+
+.three-columns .bg-frame {
+  padding: 30px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.three-columns .left-box {
+  padding: 0 15px 0 0;
+}
+
+.three-columns .description {
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.three-columns .price {
+  color: #154444;
+  font-size: 24px;
+  line-height: 1.29;
+  margin: 0;
+}
+
+.three-columns .col-list {
+  list-style: none;
+  display: flex;
+  margin: 0 0 20px;
+}
+
+.three-columns .col-list li {
+  margin-left: 8px;
+}
+
+.three-columns .col-list button {
+  width: 26px;
+  height: 26px;
+  background: #ecf4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #000;
+  border-radius: 50%;
+}
+
+.three-columns .col-list button:hover {
+  background: #ef5423;
+  color: #fff;
+}
+
+.all_furniture_section {
+  padding: 70px 0;
+}
+
+.all_furniture_section h2 {
+  text-align: center;
+}
+.all_furniture_section .button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 80px;
+}
+
+.all_furniture_section .button-list button {
+  font-size: 24px;
+  color: #919090;
+  margin: 0 50px;
+  padding: 0 0 8px;
+  position: relative;
+  transition: color 0.3s;
+}
+.all_furniture_section .button-list button:hover {
+  color: #154444;
+}
+
+.all_furniture_section .button-list button:hover:before {
+  opacity: 1;
+}
+
+.all_furniture_section .button-list button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 58px;
+  height: 2px;
+  background: #154444;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.all_furniture_section .two-columns {
+  display: flex;
+  align-items: flex-start;
+}
+.all_furniture_section .two-columns .col_img {
+  width: 48%;
+  flex-shrink: 0;
+  padding: 12px;
+  position: relative;
+}
+
+.all_furniture_section .two-columns .col_img img {
+  position: relative;
+  z-index: 2;
+}
+
+.all_furniture_section .two-columns .col_img::before,
+.all_furniture_section .two-columns .col_img::after {
+  content: "";
+  display: block;
+  width: 190px;
+  height: 86px;
+  background: #154444;
+  position: absolute;
+}
+
+.all_furniture_section .two-columns .col_img::before {
+  top: 0;
+  left: 0;
+}
+
+.all_furniture_section .two-columns .col_img::after {
+  right: 0;
+  bottom: 0;
+}
+.all_furniture_section .two-columns .col {
+  flex-grow: 1;
+  padding: 26px 0 0 11.4%;
+}
+
+.all_furniture_section .option-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all_furniture_section .option-list li {
+  width: 50%;
+  padding: 15px;
+  position: relative;
+}
+
+.all_furniture_section .option-list .border {
+  border: 1px solid #d9dce5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #808080;
+  font-size: 16px;
+  line-height: 1.3;
+  transition: all 0.3s;
+}
+
+.all_furniture_section .option-list .border:hover {
+  background: #154444;
+  color: #000;
+}
+
+.all_furniture_section .option-list i {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.all_furniture_section .option-list p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .furniture-section {
+    padding: 20px 0 20px;
+  }
+  .three-columns .bg-frame {
+    flex-wrap: wrap;
+  }
+
+  .three-columns .description {
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+
+  .three-columns .left-box {
+    padding: 0 0 10px;
+  }
+
+  .three-columns .bg-frame .right-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .three-columns .col-list {
+    margin: 0;
+    order: 2;
+  }
+
+  .all_furniture_section {
+    padding: 40px 0;
+  }
+
+  .all_furniture_section .two-columns .col {
+    flex-grow: 1;
+    padding: 0 0 0 20px;
+  }
+  .all_furniture_section .two-columns .col_img,
+  .all_furniture_section .two-columns .col_img img {
+    width: 100%;
+  }
+
+  .all_furniture_section .button-list {
+    margin: 0 0 50px;
+  }
+
+  .all_furniture_section .button-list button {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .all_furniture_section .two-columns {
+    display: block;
+  }
+}

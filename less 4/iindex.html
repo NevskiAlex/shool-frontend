@@ -1,0 +1,225 @@
+<!-- Сообщает браузеру как нужно обработать документ -->
+<!DOCTYPE html>
+<!-- оболочка документа с названием языка содержимого -->
+<html lang="en">
+  <!-- контейнер для подключения каких-нибудь важных данных -->
+  <head>
+    <!-- кодировка страницы -->
+    <meta charset="UTF-8" />
+    <!-- задает правила отображения видимой области в мобильном браузере -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- подключение файла стилей -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- звголовок в шапке страницы -->
+    <title>less</title>
+  </head>
+  <!-- тело страницы  -->
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="container">
+          <a href="#" class="logo">DudeShape</a>
+          <nav>
+            <ul class="menu">
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">feature</a></li>
+              <li><a href="#">contacts</a></li>
+            </ul>
+          </nav>
+          <div class="left-holder">
+            <form action="#">
+              <i class="icon-search"></i>
+              <!-- <input type="search icon-menu" /> -->
+            </form>
+            <i class="icon-menu"></i>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <section class="top-section">
+          <div class="container">
+            <div class="img-box"><img src="img/Rectangle 91.jpg" alt="" /></div>
+            <div class="text-box">
+              <h1>We Help You Make Modern Furniture</h1>
+              <p>
+                All of our furniture uses the best materials and choices for our
+                three-columns customers.All of our furniture uses the best
+                materials
+              </p>
+              <a class="btn-default" href="#">Explore More</a>
+            </div>
+          </div>
+        </section>
+        <section class="furniture-section">
+          <div class="container">
+            <h2>Our Popular Furniture</h2>
+            <div class="top-wrapper">
+              <p>
+                All of our furniture uses the best materials and choices for our
+                customers.All of our furniture uses the best materials and
+                choices for our customers.
+              </p>
+              <ul class="btn-list">
+                <li>
+                  <button type="button">
+                    <i class="icon-arrow-left"></i>
+                  </button>
+                </li>
+                <li>
+                  <button type="button">
+                    <i class="icon-arrow-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="three-columns">
+              <div class="columns">
+                <div class="shadow-holder">
+                  <div class="img-box">
+                    <img src="img/Rectangle 34.jpg" alt="img" />
+                  </div>
+                  <div class="bg-frame">
+                    <div class="left-box">
+                      <p class="description">
+                        White Swan Chair dsf df sdsdf sd fsdf
+                      </p>
+                      <p class="price">$40</p>
+                    </div>
+                    <div class="right-box">
+                      <ul class="col-list">
+                        <li>
+                          <button class="icon-heart"></button>
+                        </li>
+                        <li>
+                          <button class="icon-link"></button>
+                        </li>
+                      </ul>
+                      <a href="#" class="btn-default btn-green">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="shadow-holder">
+                  <div class="img-box">
+                    <img src="img/Rectangle 34.jpg" alt="img" />
+                  </div>
+                  <div class="bg-frame">
+                    <div class="left-box">
+                      <p class="description">White Swan Chair</p>
+                      <p class="price">$40</p>
+                    </div>
+                    <div class="right-box">
+                      <ul class="col-list">
+                        <li>
+                          <button class="icon-heart"></button>
+                        </li>
+                        <li>
+                          <button class="icon-link"></button>
+                        </li>
+                      </ul>
+                      <a href="#" class="btn-default btn-green">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="shadow-holder">
+                  <div class="img-box">
+                    <img src="img/Rectangle 34.jpg" alt="img" />
+                  </div>
+                  <div class="bg-frame">
+                    <div class="left-box">
+                      <p class="description">White Swan Chair</p>
+                      <p class="price">$40</p>
+                    </div>
+                    <div class="right-box">
+                      <ul class="col-list">
+                        <li>
+                          <button class="icon-heart"></button>
+                        </li>
+                        <li>
+                          <button class="icon-link"></button>
+                        </li>
+                      </ul>
+                      <a href="#" class="btn-default btn-green">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="all_furniture_section">
+          <div class="container">
+            <h2>All Furniture</h2>
+            <ul class="button-list">
+              <li><button type="button">Shop By Room</button></li>
+              <li><button type="button">Shop By Category</button></li>
+              <li><button type="button">Shop By Style</button></li>
+            </ul>
+
+            <div class="two-columns">
+              <div class="col_img">
+                <img src="img/Rectangle 6.jpg" alt="img" />
+              </div>
+              <div class="col">
+                <ul class="option-list">
+                  <li>
+                    <a href="#" class="border">
+                      <i class="icon-Group-32"></i>
+                      <p>Living Room</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="border">
+                      <i class="icon-kitchen"></i>
+                      <p>Kitchen</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="border">
+                      <i class="icon-restaurant"></i>
+                      <p>Dining Room</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="border">
+                      <i class="icon-workplace"></i>
+                      <p>Dining Room</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="border">
+                      <i class="icon-Group-33"></i>
+                      <p>Bed Room</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="border">
+                      <i class="icon-furniture"></i>
+                      <p>Hallway</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
