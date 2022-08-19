@@ -1,0 +1,49 @@
+#header {
+  padding: 26px 0;
+  border-bottom: 1px solid #000;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .logo {
+  color: #244d4d;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#header .menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+#header .menu a {
+  font-family: "DM Sans";
+  font-size: 16px;
+  color: #161616;
+  text-transform: capitalize;
+}
+
+#header .menu a:hover {
+  color: blue;
+}
+
+#header .menu li {
+  margin: 0 25px;
+}
+
+#header .left-holder {
+  display: flex;
+}
+
+#header .left-holder i {
+  font-size: 21px;
+  color: #244d4d;
+  margin-left: 30px;
+}

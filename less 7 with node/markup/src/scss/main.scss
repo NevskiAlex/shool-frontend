@@ -1,0 +1,122 @@
+$breakpoints: (
+  "xs-phone": 320px,
+  "phone": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+  "widescreen": 1200px,
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)",
+);
+
+// ligatured operators ≥ ≤
+
+@import "vendors/include-media";
+@import "vendors/normalize";
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/reset";
+@import "base/typography";
+@import "base/forms";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  @include media("<desktop") {
+    font-size: 14px;
+  }
+
+  @include media("<phone") {
+    font-size: 13px;
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+}
+
+#header {
+}
+
+.nav-opener {
+  float: right;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 3px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 6px 0 4px 10px;
+
+  @include media(">desktop") {
+    display: none;
+  }
+  &:before,
+  &:after,
+  & span {
+    background: $black;
+    border-radius: 4px;
+    position: absolute;
+    top: 16px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    margin-top: -2px;
+    transition: all 0.2s linear;
+  }
+  &:before,
+  &:after {
+    content: "";
+    top: 10px;
+  }
+  &:after {
+    top: 22px;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.nav-active {
+  #nav .menu {
+    right: 0;
+    opacity: 1;
+  }
+
+  .nav-opener {
+    span {
+      opacity: 0;
+    }
+
+    &:after,
+    &:before {
+      transform: rotate(45deg);
+      top: 16px !important;
+      left: 15%;
+      right: 15%;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+#footer {
+}

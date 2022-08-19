@@ -1,0 +1,54 @@
+body {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+#wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  background: #212121;
+  color: #c8c8c8;
+  font-size: 12px;
+  min-width: 1024px;
+}
+
+table th,
+table td {
+  padding: 20px;
+}
+
+table th {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+table th:first-child,
+table td:first-child {
+  padding-left: 38px;
+}
+
+table th:last-child,
+table td:last-child {
+  padding-right: 38px;
+}
+
+table tr:nth-child(even) {
+  background: #1c1c1c;
+}
+
+/* @media screen and (max-width: 1024px) {
+} */
