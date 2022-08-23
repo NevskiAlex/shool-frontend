@@ -1,19 +1,23 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-	box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 * {
   max-height: 1000000px;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
+$red: red;
 
 body {
+  margin: 0;
   color: $base-text-color;
   background: $base-background-color;
   font: #{$font-size-base}/#{$line-height-base} $base-font-family;
@@ -28,6 +32,3 @@ img {
   height: auto;
   vertical-align: top;
 }
-
-// google map fix
-.gm-style img {max-width: none}

@@ -3,12 +3,14 @@
 // Color names - http://name-of-color.com/
 
 $gray: #999;
-$black: #333;
+$black: #000;
 $white: #fff;
 $light-blue: #39f;
 
-$base-font-sans-serif: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-$base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+$base-color-1: #f7931e;
+
+$base-font-sans-serif: "Montserrat", "Arial", "Helvetica", sans-serif;
+$base-font-serif: "Times New Roman", "Times", "Baskerville", "Georgia", serif;
 
 // Body
 $base-text-color: $black !default;
@@ -24,7 +26,7 @@ $base-min-width: 320px;
 // Liks
 $base-link-color: $light-blue;
 
-// Buttons 
+// Buttons
 $btn-color: $white !default;
 $btn-background: $black !default;
 $btn-padding: 0.4em 0.7em !default;
@@ -37,7 +39,7 @@ $form-element-focus-border-color: $black !default;
 $placeholder-color: $gray !default;
 
 // Headers
-$h1-font-size: 30px !default;
+$h1-font-size: 64px !default;
 $h2-font-size: 27px !default;
 $h3-font-size: 24px !default;
 $h4-font-size: 21px !default;
@@ -45,7 +47,6 @@ $h5-font-size: 17px !default;
 $h6-font-size: 15px !default;
 
 $headings-font-family: inherit !default;
-$headings-color: inherit !default;
-
+$headings-color: $white !default;
 
 $animation-speed: 0.3s;
