@@ -1,0 +1,86 @@
+.visual-section {
+  min-height: 100vh;
+  background: url("../img/pexels-cottonbro-7674492.jpg") no-repeat 50% 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+  font: 500 28px/1.21 $base-font-sans-serif;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.1) 100%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 280px;
+    text-align: center;
+    position: relative;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-decoration: none;
+    padding: 20px 33px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid white;
+      transform: skew(-18deg);
+      z-index: 2;
+      transition: 0.3s all;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+      background: $base-color-1;
+      transform: skew(-18deg);
+      transition: 0.3s all;
+    }
+
+    &:hover {
+      &:after {
+        left: 0;
+        top: 0;
+      }
+      &:before {
+        top: 8px;
+        left: -10px;
+      }
+    }
+
+    span {
+      position: relative;
+      z-index: 3;
+    }
+  }
+}

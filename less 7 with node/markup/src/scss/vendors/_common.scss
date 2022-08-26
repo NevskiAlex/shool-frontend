@@ -3,77 +3,53 @@
   overflow: hidden;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-
-  .container {
-    max-width: 1320px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  a {
-    color: $white;
-    text-decoration: none;
-    font: 500 16px/1.2 $base-font-sans-serif;
-
-    &:hover {
-      color: $base-color-1;
-    }
-  }
-
-  .menu {
-    @extend %listreset;
-    display: flex;
-    align-items: center;
-
-    li {
-      padding: 0 22px;
-    }
-  }
-}
-
 .container {
   max-width: 1094px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-section {
-  min-height: 100vh;
-  background: url("../img/pexels-cottonbro-7674492.jpg") no-repeat 50% 0;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: $white;
-  font: 500 28px/1.21 $base-font-sans-serif;
-  position: relative;
+.custom-checkbox-form {
+  padding: 50px;
+}
 
-  &:before {
-    content: "";
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0.1) 100%,
-      rgba(0, 0, 0, 0.4) 100%
-    );
+.custom-checkbox {
+  input {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  @include media("<desktop") {
+    left: -9999px;
+    z-index: -10;
+
+    &:checked ~ label {
+      &:before {
+        opacity: 1;
+      }
+    }
   }
 
-  .container {
+  label {
     position: relative;
+    padding: 0 0 0 26px;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: top;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #000;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &:before {
+      position: absolute;
+      left: 2px;
+      top: 0;
+      font-size: 13px;
+      color: #000;
+      opacity: 0;
+      transition: 0.3s all;
+    }
   }
 }
