@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<svg
+  id="Layer_1"
+  class="svg"
+  style="enable-background: new 0 0 500 500"
+  version="1.1"
+  viewBox="0 0 500 500"
+  xml:space="preserve"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <style type="text/css">
+    .st0 {
+      fill: #f26e91;
+    }
+    .st1 {
+      fill: #00a779;
+    }
+    .st2 {
+      fill: #c4ffc9;
+    }
+    .st3 {
+      fill: #ab630a;
+    }
+    .st4 {
+      fill: #c98c40;
+    }
+    .st5 {
+      fill: #15aa78;
+    }
+    .st6 {
+      fill: #ff9000;
+    }
+    .st7 {
+      fill: #fceecf;
+    }
+    .st8 {
+      fill: #ffe940;
+    }
+    .st9 {
+      fill: #f0e3ce;
+    }
+    .st10 {
+      fill: #ffb5c5;
+    }
+    .st11 {
+      fill: #91edff;
+    }
+    .st12 {
+      fill: #7191f0;
+    }
+    .st13 {
+      fill: #363636;
+    }
+    .st14 {
+      fill: #565656;
+    }
+    .st15 {
+      fill: #f3df4d;
+    }
+    .st16 {
+      fill: #cd4a77;
+    }
+    .st17 {
+      fill: #577ae6;
+    }
+    .st18 {
+      fill: #f4d100;
+    }
+  </style>
+  <g id="pinwheel">
+    <path
+      class="st9"
+      d="M252.63,463.55L252.63,463.55c-5.26,0-9.52-4.26-9.52-9.52V204.29h19.05v249.73   C262.16,459.28,257.89,463.55,252.63,463.55z"
+    />
+    <g class="animate">
+      <polygon class="st6" points="250,135.27 250,41.69 348.82,41.69   " />
+      <polygon
+        class="st12"
+        points="250,135.27 343.58,135.27 343.58,234.09   "
+      />
+      <polygon class="st5" points="250,135.27 250,228.86 151.18,228.86   " />
+      <polygon class="st0" points="250,135.27 156.42,135.27 156.42,36.45   " />
+      <polygon class="st8" points="250,41.69 200.59,83.1 250,135.27   " />
+      <polygon class="st11" points="343.58,135.27 302.17,85.86 250,135.27   " />
+      <polygon class="st2" points="250,228.86 299.41,187.45 250,135.27   " />
+      <polygon
+        class="st10"
+        points="156.42,135.27 197.83,184.68 250,135.27   "
+      />
+      <circle class="st16" cx="250" cy="135.27" r="12.16" />
+    </g>
+  </g>
+</svg>
