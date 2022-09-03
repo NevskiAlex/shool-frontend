@@ -10,6 +10,7 @@
 @import "base/reset";
 @import "base/typography";
 @import "base/forms";
+@import "base/animate";
 
 body {
   display: flex;
@@ -30,4 +31,108 @@ body {
   overflow: hidden;
   position: relative;
   flex-grow: 1;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+
+section {
+  background: #e4ecf0;
+  position: relative;
+  margin: 0 0 150px;
+  z-index: -1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 208px;
+    height: 60px;
+    background: url(../img/img-01.svg);
+    background-size: cover;
+  }
+}
+
+.two-columns {
+  font-size: 24px;
+  line-height: 1.8;
+  color: #00486d;
+  display: flex;
+
+  .col-left {
+    padding: 85px 0 85px 85px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 55px;
+    line-height: 1.25;
+    font-weight: 400;
+  }
+
+  .btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 234px;
+    background: #00486d;
+    border-radius: 4px;
+    padding: 7px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .col-right {
+    width: 41.3%;
+    flex-shrink: 0;
+    background: #00486d;
+    margin: 0 0 0 14.1%;
+
+    .img-box {
+      position: relative;
+      top: 56px;
+      right: 100px;
+      width: 100%;
+      padding: 0 0 127%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0 32px 24px rgba(0, 72, 109, 0.5);
+      // z-index: 5;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: -60px;
+        bottom: -60px;
+        width: 208px;
+        height: 208px;
+        background: url(../img/img-01.svg);
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.video-section {
+  .col-right {
+    .video {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 576px !important;
+      z-index: 5;
+    }
+  }
 }
