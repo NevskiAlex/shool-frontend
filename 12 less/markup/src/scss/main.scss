@@ -1,0 +1,124 @@
+// ligatured operators ≥ ≤
+
+@import "vendors/include-media";
+@import "vendors/normalize";
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/reset";
+@import "base/typography";
+@import "base/forms";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  @include media("<desktop") {
+    font-size: 14px;
+  }
+
+  @include media("<phone") {
+    font-size: 13px;
+  }
+}
+
+#wrapper {
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+}
+
+.track {
+  padding: 20px;
+
+  .img {
+    width: 200px;
+    animation: go 2s linear 1;
+    position: relative;
+    left: 0;
+
+    .demo {
+      fill: #f7b2b8;
+      animation: width 2s linear 1;
+    }
+  }
+  .img-2 {
+    display: none;
+    width: 150px;
+    position: relative;
+    top: 15px;
+    left: -200px;
+    animation-name: go2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    transform: rotateZ(0) rotateY(0);
+  }
+}
+
+@keyframes go {
+  0% {
+    left: 0;
+  }
+  50%{
+    
+  }
+  100% {
+    left: calc(100% - 200px);
+  }
+}
+
+@keyframes go2 {
+  0% {
+    left: -200px;
+    transform: rotateZ(0);
+    width: 150px;
+  }
+
+  30% {
+    width: 50px;
+  }
+
+  50% {
+    transform: rotateZ(-15deg) rotateY(0);
+    width: 150px;
+  }
+  100% {
+    left: calc(100% - 500px);
+    transform: rotateZ(0) rotateY(180deg);
+    width: 50px;
+  }
+}
+
+.svg {
+  width: 400px;
+  margin-left: 40%;
+
+  .animate {
+    animation: rotate infinite 2s linear;
+    transform: rotate(0);
+    transform-origin: 50% 136px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes width {
+  0% {
+    fill: #f7b2b8;
+  }
+  100% {
+    fill: #000;
+  }
+}
