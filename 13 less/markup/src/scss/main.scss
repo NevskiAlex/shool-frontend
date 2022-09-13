@@ -29,6 +29,8 @@ $media-expressions: (
 @import "base/reset";
 @import "base/typography";
 @import "base/forms";
+@import "base/slick";
+@import "base/slick-theme";
 
 body {
   display: flex;
@@ -199,6 +201,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: inset 0 0 150px #222;
 
   .align-block {
     max-width: 480px;
@@ -225,4 +228,46 @@ body {
     background: $base-color-1;
     color: $white;
   }
+}
+
+.latest_work_section{
+  padding: 50px 0;
+
+  .three-columns{
+    display: flex;
+    flex-wrap: wrap;
+
+    .col{
+      // width: 33.33%;
+      padding: 10px;
+
+      
+    }
+
+    .img-box{
+      border-radius: 3px;
+      overflow: hidden;
+      margin: 0 0 10px;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    h3{
+      font-size: 14px;
+
+    }
+  }
+}
+
+.slick-dots li button{
+width: 6px;
+height: 6px;
+background: $white;
+border-radius: 50%;
+
+&.slick-active{
+  background: red;
+}
 }

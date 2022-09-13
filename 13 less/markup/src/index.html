@@ -37,6 +37,48 @@
             <a href="#" class="btn">Get a quote</a>
           </div>
         </section>
+
+        <section class="latest_work_section">
+          <div class="container">
+            <h2>Latest Work</h2>
+            <div class="btn-box">
+              <buttons>next</buttons>
+              <buttons>prev</buttons>
+            </div>
+            <div class="three-columns slider-columns">
+              <div>
+                <div class="col">
+                  <div class="img-box"><img src="img/IMAGEimg-03.jpg" alt="img"></div>
+                  <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae maiores enim consequatur molestiae quas sint facere alias iure, quo sequi, numquam a expedita porro quaerat labore distinctio magni dicta provident.</h3>
+                </div>
+              </div>
+              <div>
+                <div class="col">
+                  <div class="img-box"><img src="img/IMAGEimg-04.jpg" alt="img"></div>
+                  <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae maiores enim consequatur molestiae quas sint facere alias iure, quo sequi, numquam a expedita porro quaerat labore distinctio magni dicta provident.</h3>
+  
+                </div>
+              </div>
+              <div>
+                <div class="col">
+                  <div class="img-box"><img src="img/IMAGEimg-05.jpg" alt="img"></div>
+                  <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae maiores enim consequatur molestiae quas sint facere alias iure, quo sequi, numquam a expedita porro quaerat labore distinctio magni dicta provident.</h3>
+                </div>
+              </div>
+             
+              
+              <div>
+                <div class="col">
+                  <div class="img-box"><img src="img/IMAGEimg-05.jpg" alt="img"></div>
+                  <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae maiores enim consequatur molestiae quas sint facere alias iure, quo sequi, numquam a expedita porro quaerat labore distinctio magni dicta provident.</h3>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+          
+        </section>
+        
       </main>
     </div>
     <footer id="footer">footer</footer>
@@ -45,6 +87,42 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slider-columns').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          prevArrow: '<button type="button" class="slick-prev"> </button>',
+          nextArrow: '<button type="button" class="slick-next"> </button>',
+          responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              dots: true,
+              arrows:false
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+        });
+      });
+    </script>
   </body>
 </html>
