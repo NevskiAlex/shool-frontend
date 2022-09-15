@@ -1,5 +1,5 @@
 // vertical align el inside parent with fixed height/min-height
-// usage
+// usage 
 // html - .parent>.child
 // scss - @include v-align;
 //     or @include v-align(250px);
@@ -10,7 +10,7 @@
   text-align: center;
 
   &:#{$va-pseudo} {
-    content: "";
+    content: '';
     display: inline-block;
     vertical-align: $va-direction;
     width: 0;
@@ -26,31 +26,26 @@
 }
 
 // vertical align a pair of child el inside parent
-// usage
+// usage 
 // html - .post>.image+.text
 // scss - @include v-align-pair(image, text);
 //     or @include v-align-pair(image, text, bottom);
 //     or @include v-align-pair(image, text, middle, 200px);
 //
-@mixin v-align-pair(
-  $child-name1,
-  $child-name2,
-  $valign: middle,
-  $width1: auto,
-  $width2: auto
-) {
+@mixin v-align-pair($child-name1, $child-name2, $valign: middle, $width1: auto, $width2: auto ) {
   display: table;
-  .#{$child-name1} {
+  .#{$child-name1}{
     display: table-cell;
     vertical-align: $valign;
-    width: $width1;
+    width: $width1; 
   }
-  .#{$child-name2} {
+ .#{$child-name2} {
     display: table-cell;
     vertical-align: $valign;
     width: $width2;
   }
 }
+
 
 // vertical align el
 // usage: @include vertical-align-el;
@@ -98,15 +93,17 @@
 /// font-smothing
 /// @include font-smoothing(on);
 /// @include font-smoothing(off);
-@mixin font-smoothing($value: on) {
-  @if $value == on {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  } @else {
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
+@mixin font-smoothing($value:on){
+  @if $value == on{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+  @else{
+    -webkit-font-smoothing:subpixel-antialiased;
+    -moz-osx-font-smoothing:auto;
   }
 }
+
 
 /// Hides the text in an element, commonly used to show an image. Some elements will need block-level styles applied.
 ///
@@ -130,15 +127,16 @@
   white-space: nowrap;
 }
 
-/// Creates a visual triangle.
+
+/// Creates a visual triangle. 
 /// Mixin takes ($size, $color, $direction)
 /// The $size argument can take one or two values—width height.
-/// The $color argument can take one or two
+/// The $color argument can take one or two 
 /// values—foreground-color background-color.
-///
+/// 
 /// @author http://bourbon.io/docs/#triangle
 ///
-/// $direction:
+/// $direction: 
 /// up, down, left, right, up-right, up-left, down-right, down-left
 /// @example scss - Usage
 ///   @include triangle(12px, gray, down);
@@ -152,11 +150,7 @@
   height: 0;
   width: 0;
 
-  @if ($direction == up) or
-    ($direction == down) or
-    ($direction == right) or
-    ($direction == left)
-  {
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
     $width: $width / 2;
     $height: if(length($size) > 1, $height, $height/2);
 
@@ -181,7 +175,7 @@
     border-top: $height solid $foreground-color;
 
     @if $direction == up-right {
-      border-left: $width solid $background-color;
+      border-left:  $width solid $background-color;
     } @else if $direction == up-left {
       border-right: $width solid $background-color;
     }
@@ -189,7 +183,7 @@
     border-bottom: $height solid $foreground-color;
 
     @if $direction == down-right {
-      border-left: $width solid $background-color;
+      border-left:  $width solid $background-color;
     } @else if $direction == down-left {
       border-right: $width solid $background-color;
     }
@@ -202,38 +196,34 @@
     border-style: solid;
     border-width: $height $width;
   } @else if ($direction == inset-right) {
-    border-color: $background-color
-      $background-color
-      $background-color
-      $foreground-color;
+    border-color: $background-color $background-color $background-color $foreground-color;
     border-style: solid;
     border-width: $width $height;
   } @else if ($direction == inset-left) {
-    border-color: $background-color
-      $foreground-color
-      $background-color
-      $background-color;
+    border-color: $background-color $foreground-color $background-color $background-color;
     border-style: solid;
     border-width: $width $height;
   }
 }
 
+
 /// Animate css properties
-// usage
+// usage 
 // scss - @include animate(color);
 //     or @include animate(color width);
 //     or @include animate(color width, 1s, linear);
 //
-$animation-speed: 0.3s !default;
+$animation-speed: .3s !default;
 
 @mixin animate($properties, $duration: $animation-speed, $easing: ease-in-out) {
-  $list: ();
+  $list:();
   @each $prop in $properties {
     $str: #{$prop} #{$duration} #{$easing};
     $list: join($list, #{$str}, comma);
   }
   transition: $list;
 }
+
 
 /// Mixin for styling form-placeholders
 /// @example scss - Usage
@@ -250,22 +240,11 @@ $animation-speed: 0.3s !default;
 ///   }
 
 @mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content;
-  }
-  &::-moz-placeholder {
-    opacity: 1;
-    @content;
-  }
-  &:-moz-placeholder {
-    @content;
-  }
-  &:-ms-input-placeholder {
-    @content;
-  }
-  &.placeholder {
-    @content;
-  }
+  &::-webkit-input-placeholder {@content}
+  &::-moz-placeholder {opacity: 1; @content}
+  &:-moz-placeholder {@content}
+  &:-ms-input-placeholder {@content}
+  &.placeholder {@content}
 }
 
 /// Font-size px to rem calc
